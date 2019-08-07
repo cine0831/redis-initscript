@@ -7,6 +7,7 @@
 # * Created  : 
 # * Modifier : by Alex, Lee
 # * Modified : 04-08-2019
+# * E-mail   : cine0831@gmail.com
 #**/
 #
 #set -e
