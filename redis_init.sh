@@ -3,7 +3,6 @@
 #
 #/**
 # * Title    : redis all-in-one intanse launcher init script
-# * Auther   : by skbyeon
 # * Created  : 
 # * Modifier : by Alex, Lee
 # * Modified : 04-08-2019
