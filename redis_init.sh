@@ -14,8 +14,8 @@
 
 . /etc/rc.d/init.d/functions
 
-readonly REDIS_USER="redis-s"
-readonly REDIS_HOME="/home/redis-s"
+readonly REDIS_USER="redis"
+readonly REDIS_HOME="/usr/local/redis"
 REDIS_DIR=""
 
 usage() {
@@ -29,24 +29,24 @@ Options:
     -h|--help
 
 Examples:
-    ${0##*/} -t redis28-6379 -o {start|stop|restart|ping|version}
+    ${0##*/} -t redis28-1111 -o {start|stop|restart|ping|version}
 
 Description:
     Redis 2.8.x)
-    type: redis28-6379, prefix: $REDIS_HOME/redis28, port: 6379
-    type: redis28-6378, prefix: $REDIS_HOME/redis28, port: 6378
-    type: redis28-6377, prefix: $REDIS_HOME/redis28, port: 6377
-    type: redis28-6376, prefix: $REDIS_HOME/redis28, port: 6376
-    type: redis28-6375, prefix: $REDIS_HOME/redis28, port: 6375
-    type: redis28-6381, prefix: $REDIS_HOME/redis28, port: 6381
+    type: redis28-1111, prefix: $REDIS_HOME/redis28, port: 1111
+    type: redis28-1112, prefix: $REDIS_HOME/redis28, port: 1112
+    type: redis28-1113, prefix: $REDIS_HOME/redis28, port: 1113
+    type: redis28-1114, prefix: $REDIS_HOME/redis28, port: 1114
+    type: redis28-1115, prefix: $REDIS_HOME/redis28, port: 1115
+    type: redis28-1116, prefix: $REDIS_HOME/redis28, port: 1116
 
     Redis 5.0.x)
-    type: redis50-6379, prefix: $REDIS_HOME/redis50, port: 6379
-    type: redis50-6378, prefix: $REDIS_HOME/redis50, port: 6378
-    type: redis50-6377, prefix: $REDIS_HOME/redis50, port: 6377
-    type: redis50-6376, prefix: $REDIS_HOME/redis50, port: 6376
-    type: redis50-6375, prefix: $REDIS_HOME/redis50, port: 6375
-    type: redis50-6381, prefix: $REDIS_HOME/redis50, port: 6381
+    type: redis50-1111, prefix: $REDIS_HOME/redis50, port: 1111
+    type: redis50-1112, prefix: $REDIS_HOME/redis50, port: 1112
+    type: redis50-1113, prefix: $REDIS_HOME/redis50, port: 1113
+    type: redis50-1114, prefix: $REDIS_HOME/redis50, port: 1114
+    type: redis50-1115, prefix: $REDIS_HOME/redis50, port: 1115
+    type: redis50-1116, prefix: $REDIS_HOME/redis50, port: 1116
 "
 exit 1
 }
@@ -149,64 +149,64 @@ fi
 
 
 case "$rtype" in
-    redis28-6379 )
+    redis28-1111 )
         REDIS_DIR="${REDIS_HOME}/redis28"
-        port="6379"
+        port="1111"
         pass=$(check_pass)
         ;;
-    redis28-6378 )
+    redis28-1112 )
         REDIS_DIR="${REDIS_HOME}/redis28"
-        port="6378"
+        port="1112"
         pass=$(check_pass)
         ;;
-    redis28-6377 )
+    redis28-1113 )
         REDIS_DIR="${REDIS_HOME}/redis28"
-        port="6377"
+        port="1113"
         pass=$(check_pass)
         ;;
-    redis28-6376 )
+    redis28-1114 )
         REDIS_DIR="${REDIS_HOME}/redis28"
-        port="6376"
+        port="1114"
         pass=$(check_pass)
         ;;
-    redis28-6375 )
+    redis28-1115 )
         REDIS_DIR="${REDIS_HOME}/redis28"
-        port="6375"
+        port="1115"
         pass=$(check_pass)
         ;;
-    redis28-6381 )
+    redis28-1116 )
         REDIS_DIR="${REDIS_HOME}/redis28"
-        port="6381"
+        port="1116"
         pass=$(check_pass)
         ;;
-    redis50-6379 )
+    redis50-1111 )
         REDIS_DIR="${REDIS_HOME}/redis50"
-        port="6379"
+        port="1111"
         pass=$(check_pass)
         ;;
-    redis50-6378 )
+    redis50-1112 )
         REDIS_DIR="${REDIS_HOME}/redis50"
-        port="6378"
+        port="1112"
         pass=$(check_pass)
         ;;
-    redis50-6377 )
+    redis50-1113 )
         REDIS_DIR="${REDIS_HOME}/redis50"
-        port="6377"
+        port="1113"
         pass=$(check_pass)
         ;;
-    redis50-6376 )
+    redis50-1114 )
         REDIS_DIR="${REDIS_HOME}/redis50"
-        port="6376"
+        port="1114"
         pass=$(check_pass)
         ;;
-    redis50-6375 )
+    redis50-1115 )
         REDIS_DIR="${REDIS_HOME}/redis50"
-        port="6375"
+        port="1115"
         pass=$(check_pass)
         ;;
-    redis50-6381 )
+    redis50-1116 )
         REDIS_DIR="${REDIS_HOME}/redis50"
-        port="6381"
+        port="1116"
         pass=$(check_pass)
         ;;
     *)
